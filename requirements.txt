@@ -1,0 +1,9 @@
+alembic
+pytest
+python-jose
+passlib[bcrypt]
+pydantic
+email-validator
+fastapi
+uvicorn
+httpx
