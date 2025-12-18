@@ -38,56 +38,57 @@ Key considerations:
 
 ## Running the Application
 
+
+## API will be available at:
+
+http://localhost:8000
+
+---
+## Health check:
+
+- GET /health
+---
+## Running Tests
+- pytest
+---
+## Pain Points & Learnings
+## Pain Points
+
+- Handling differences between MySQL and SQLite during testing
+
+- Password hashing compatibility on Windows
+
+- Managing Alembic migrations cleanly
+
+- Ensuring proper dependency management
+
+## Learnings
+
+- Designing production-grade database schemas
+
+- Writing clean service & repository layers
+
+- Importance of Docker for reproducibility
+
+- Writing reliable unit and integration tests
+
+- Handling real-world edge cases early
+---
+## Best Practices Followed
+
+- Separation of concerns (API, Service, Repository layers)
+
+- Secure password handling
+
+- Environment-based configuration
+
+- Frequent, meaningful Git commits
+
+- Defensive error handling
+
+- Clean, readable code structure
+---
 ### Using Docker (Recommended)
 ```bash
 docker compose build
 docker compose up
-
-API will be available at:
-
-http://localhost:8000
-
-
-Health check:
-
-GET /health
-
-Running Tests
-pytest
-
-Pain Points & Learnings
-Pain Points
-
-Handling differences between MySQL and SQLite during testing
-
-Password hashing compatibility on Windows
-
-Managing Alembic migrations cleanly
-
-Ensuring proper dependency management
-
-Learnings
-
-Designing production-grade database schemas
-
-Writing clean service & repository layers
-
-Importance of Docker for reproducibility
-
-Writing reliable unit and integration tests
-
-Handling real-world edge cases early
-
-Best Practices Followed
-
-Separation of concerns (API, Service, Repository layers)
-
-Secure password handling
-
-Environment-based configuration
-
-Frequent, meaningful Git commits
-
-Defensive error handling
-
-Clean, readable code structure
